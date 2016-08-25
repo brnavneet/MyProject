@@ -1,0 +1,25 @@
+train@trn0553:~$ puppet apply puppet_train.pp
+Error: Puppet::Parser::AST::Resource failed with error ArgumentError: Invalid resource type type at /home/train/puppet_train.pp:4 on node trn0553.dmztrn.amdocs.trn
+Wrapped exception:
+Invalid resource type type
+Error: Puppet::Parser::AST::Resource failed with error ArgumentError: Invalid resource type type at /home/train/puppet_train.pp:4 on node trn0553.dmztrn.amdocs.trn
+train@trn0553:~$ vi puppet_train.pp
+train@trn0553:~$ ll /home/train/devOps
+-rw-rw-r-- 1 train train 0 Aug 25 16:10 /home/train/devOps
+train@trn0553:~$ vi puppet_train.pp
+train@trn0553:~$ puppet apply puppet_train.pp
+Notice: Compiled catalog for trn0553.dmztrn.amdocs.trn in environment production in 0.08 seconds
+Notice: /Stage[main]/Main/File[DevOps]/content: content changed '{md5}d41d8cd98f00b204e9800998ecf8427e' to '{md5}64fde616cc4e9451cff6a43a6c3e3e97'
+Notice: Finished catalog run in 0.09 seconds
+train@trn0553:~$ puppet module install puppetlabs-tomcat
+Notice: Preparing to install into /home/train/.puppet/modules ...
+Notice: Created target directory /home/train/.puppet/modules
+Notice: Downloading from https://forge.puppetlabs.com ...
+
+Notice: Installing -- do not interrupt ...
+/home/train/.puppet/modules
+└─┬ puppetlabs-tomcat (v1.5.0)
+  ├── nanliu-staging (v1.0.3)
+  ├── puppetlabs-concat (v2.2.0)
+  └── puppetlabs-stdlib (v4.12.0)
+
