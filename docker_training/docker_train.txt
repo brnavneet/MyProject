@@ -1,0 +1,30 @@
+332  apt-get upgrade docker-engine
+  333  apt-get upgrade docker
+  337  apt-get upgrade docker
+  338  locate docker
+  339  service docker start
+  340  curl -ssl https://get.docker.com | sh
+  341  service docker start
+  345  curl -ssl https://get.docker.com | sh
+  347  which docker
+  348  service docker start
+  349  ps -ef | grep docker
+  350  docker run ubuntu:14.04 /bin/echo "Hello Navneet"
+  352  docker run ubuntu:14.04 /bin/echo "Hello Navneet"
+  353  docker run /bin/echo "Hello Navneet"
+  355  docker run Hello Navneet
+  356  docker run hello-world
+  361  docker run ubuntu:14.04 /bin/echo "Hello Navneet"
+  362  traceroute  https://index.docker.io
+  372  docker ps -a
+  373  docker exec -it pensive_hopper /bin/bash
+  375  docker  build
+  378  docker  build
+  379  docker build
+  380  docker build --help
+  381  docker build -t mytomcat .
+  384  docker build -t mytomcat .
+  389  docker build -t mytomcat .
+  390  docker images
+  391  docker run -d -p 8888:8080 mytomcat
+
